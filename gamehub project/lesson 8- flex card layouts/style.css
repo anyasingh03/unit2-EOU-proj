@@ -86,9 +86,13 @@ HERO SECTION
     transform: scale(1.05);
 }
 
+
 .hero-subtitle {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 22px;
+    margin-bottom: 40px;  /* Increased from 30px */
+    max-width: 700px;     /* ADD THIS */
+    margin-left: auto;    /* ADD THIS */
+    margin-right: auto;   /* ADD THIS */
 }
 
 /* ===================================
