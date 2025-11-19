@@ -1,0 +1,305 @@
+/* ===================================
+LESSON 6: Setup & Hero Section
+=================================== */
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container for consistent width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===================================
+HEADER SECTION
+=================================== */
+.main-header {
+    background-color: #d6789d;
+    padding: 20px 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.5s ease;
+}
+
+.main-nav a:hover {
+    color: #ffc5df;
+    text-decoration: underline;
+}
+
+.main-nav a:focus {
+    outline: 2px solid#3498db;
+    outline-offset: 4px;
+}
+
+/* ===================================
+HERO SECTION
+=================================== */
+.hero {
+    background-color: #ff97c2;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-title:hover {
+    color: #ffbbd8;
+    transform: scale(1.05);
+}
+
+
+.hero-subtitle {
+    font-size: 22px;
+    margin-bottom: 40px;  /* Increased from 30px */
+    max-width: 700px;     /* ADD THIS */
+    margin-left: auto;    /* ADD THIS */
+    margin-right: auto;   /* ADD THIS */
+}
+
+/* ===================================
+BUTTONS
+=================================== */
+.btn {
+    padding: 15px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;  /* ADD THIS - semi-bold */
+    font-family: 'Poppins', sans-serif;  /* ADD THIS */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ffc7e0;
+    color: #ffffff;
+}
+
+btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px) scale(1.05);
+}
+
+btn:active {
+    transform: translateY(0);
+}
+
+/* ===================================
+NOTES FOR FUTURE LESSONS:
+- Each new lesson will add sections BELOW
+- Keep this file organized with comments
+- We'll enhance existing sections as we learn more
+=================================== */
+
+.features {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: flex;  /* Activate Flexbox */
+    justify-content: space-between;  /* Spread out */
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #ffbcd3;
+    padding: 40px 30px; 
+    border-radius: 12px;  /* rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    flex: 1;  /* equal width */
+    text-align: center;
+    color:white
+}
+
+.feature-card {
+    transition: transform 0.3s ease, 
+        box-shadow 0.3s ease;  /
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    color:white
+}
+
+/* ===================================
+   LESSON 9: TYPOGRAPHY SYSTEM
+   =================================== */
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.about{
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    gap: 60;
+}
+
+.about-text{
+    flex: 1;
+}
+
+.about-image{
+    flex: 1;
+}
+
+.about-text h2{
+    color: #00426e;
+    margin-bottom: 25px;
+    font-size: 2.2 rem;
+}
+
+.about-text p {
+    color: #555;
+    font-size: 1.1 rem;
+    line-height: 1.8;
+    margin-bottom: 1.5 rem;
+}
+
+.about-image img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover{
+    transform: scale(1.1);
+}
+
+.community{
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.community-content{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-direction: row-reverse;
+}
+
+.community-text{
+    flex: 1;
+}
+
+.community-image{
+    flex: 1;
+}
+
+.community-image img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+.community-text h2{
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.join-btn{
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.community-text p {
+    color: #555;
+    font-size: 1.1 rem;
+    line-height: 1.8;
+    margin-bottom: 1.5 rem;
+
+}
+
+/* lesson 12 */
+
+.main-footer{
+    background: linear-gradient(135deg, #ffa3cb 0%, rgb(139, 0, 58) 100%);
+    color: white;
+    padding: 60px 0 2
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
