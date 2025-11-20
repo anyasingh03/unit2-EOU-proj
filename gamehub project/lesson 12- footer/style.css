@@ -78,7 +78,7 @@ HERO SECTION
     font-size: 48px;
     margin-bottom: 20px;
     transition: color 0.3s ease, transform 0.3s ease;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero-title:hover {
@@ -89,10 +89,14 @@ HERO SECTION
 
 .hero-subtitle {
     font-size: 22px;
-    margin-bottom: 40px;  /* Increased from 30px */
-    max-width: 700px;     /* ADD THIS */
-    margin-left: auto;    /* ADD THIS */
-    margin-right: auto;   /* ADD THIS */
+    margin-bottom: 40px;
+    /* Increased from 30px */
+    max-width: 700px;
+    /* ADD THIS */
+    margin-left: auto;
+    /* ADD THIS */
+    margin-right: auto;
+    /* ADD THIS */
 }
 
 /* ===================================
@@ -104,8 +108,10 @@ BUTTONS
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-weight: 600;  /* ADD THIS - semi-bold */
-    font-family: 'Poppins', sans-serif;  /* ADD THIS */
+    font-weight: 600;
+    /* ADD THIS - semi-bold */
+    font-family: 'Poppins', sans-serif;
+    /* ADD THIS */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -150,24 +156,28 @@ NOTES FOR FUTURE LESSONS:
 }
 
 .features-grid {
-    display: flex;  /* Activate Flexbox */
-    justify-content: space-between;  /* Spread out */
+    display: flex;
+    /* Activate Flexbox */
+    justify-content: space-between;
+    /* Spread out */
     gap: 30px;
 }
 
 .feature-card {
     background-color: #ffbcd3;
-    padding: 40px 30px; 
-    border-radius: 12px;  /* rounded corners */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    flex: 1;  /* equal width */
+    padding: 40px 30px;
+    border-radius: 12px;
+    /* rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    /* equal width */
     text-align: center;
-    color:white
+    color: white
 }
 
 .feature-card {
-    transition: transform 0.3s ease, 
-        box-shadow 0.3s ease;  /
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;/
 }
 
 .feature-card:hover {
@@ -182,7 +192,7 @@ NOTES FOR FUTURE LESSONS:
 .feature-card h3 {
     color: #2c3e50;
     margin-bottom: 15px;
-    color:white
+    color: white
 }
 
 /* ===================================
@@ -194,26 +204,26 @@ h1 {
     line-height: 1.2;
 }
 
-.about{
+.about {
     padding: 80px 0;
     background-color: #ffffff;
 }
 
-.about-content{
+.about-content {
     display: flex;
     align-items: center;
     gap: 60;
 }
 
-.about-text{
+.about-text {
     flex: 1;
 }
 
-.about-image{
+.about-image {
     flex: 1;
 }
 
-.about-text h2{
+.about-text h2 {
     color: #00426e;
     margin-bottom: 25px;
     font-size: 2.2 rem;
@@ -226,7 +236,7 @@ h1 {
     margin-bottom: 1.5 rem;
 }
 
-.about-image img{
+.about-image img {
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -234,43 +244,44 @@ h1 {
     transition: transform 0.3s ease;
 }
 
-.about-image img:hover{
+.about-image img:hover {
     transform: scale(1.1);
 }
 
-.community{
+.community {
     padding: 80px 0;
     background-color: #ffffff;
 }
 
-.community-content{
+.community-content {
     display: flex;
     align-items: center;
     gap: 60px;
     flex-direction: row-reverse;
 }
 
-.community-text{
+.community-text {
     flex: 1;
 }
 
-.community-image{
+.community-image {
     flex: 1;
 }
 
-.community-image img{
+.community-image img {
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     transition: transform 0.3s ease;
 }
-.community-text h2{
+
+.community-text h2 {
     color: #2c3e50;
     margin-bottom: 25px;
 }
 
-.join-btn{
+.join-btn {
     background: #e74c3c;
     color: white;
     border: none;
@@ -290,16 +301,84 @@ h1 {
 
 /* lesson 12 */
 
-.main-footer{
+.main-footer {
     background: linear-gradient(135deg, #ffa3cb 0%, rgb(139, 0, 58) 100%);
     color: white;
     padding: 60px 0 2
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: space-between;
     gap: 40px;
     margin-bottom: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-section p {
+    color: #bdc3c7;
+    font-size: 16px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #95a5a6;
+}
+
+.footer-bottom a {
+    color: #95a5a6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #3498db;
 }
 
