@@ -187,6 +187,8 @@ NOTES FOR FUTURE LESSONS:
 .feature-icon {
     font-size: 80px;
     margin-bottom: 20px;
+    animation-name: icon;
+    animation: icon 5s ease-in-out infinite;
 }
 
 .feature-card h3 {
@@ -382,3 +384,12 @@ h1 {
     color: #3498db;
 }
 
+/* november 24th animation homework */
+
+@keyframes icon {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.1);}
+    50% {transform: scale(1);}
+    75% {transform: scale(1.2);}
+    100% {transform:scale(1);}
+}
